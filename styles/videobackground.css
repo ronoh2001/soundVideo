@@ -1,4 +1,4 @@
-/*.homepage-hero-module {
+.homepage-hero-module {
     border-right: none;
     border-left: none;
     position: relative;
@@ -26,7 +26,7 @@
     position: absolute;
 }
 .video-container .filter {
-    z-index: 0;
+    z-index: 100;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -38,30 +38,36 @@
 }
 .video-container video.fillWidth {
     width: 100%;
-}*/
+}
+/*
+
 
 body {
-  background-color: black;
+  margin: 0;
+  background: #000;
 }
-.writing {
-  font-family: Voluptate_demo;
+*/
+
+#writing {
   font-weight:100;
   background: rgba(0,0,0,0.3);
   color: white;
   padding: 2rem;
-  width: 33%;
+  width: 50%;
   margin:2rem;
-  float: center;
+  float: right;
   font-size: 1.2rem;
-
+  font-family: enough for me;
+  text-align: center;
 }
 h1 {
+  font-family: Voluptate_demo;
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: .3rem;
 }
-.writing button {
+#writing button {
   display: block;
   width: 80%;
   padding: .4rem;
@@ -74,7 +80,7 @@ h1 {
   cursor: pointer;
   transition: .3s background;
 }
-.writing button:hover {
+#writing button:hover {
    background: rgba(0,0,0,0.5);
 }
 
@@ -89,6 +95,10 @@ a {
 a:hover{
   background:rgba(0,0,0,0.9);
 }
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
   div{width:70%;}
 }
+@media screen and (max-device-width: 800px) {
+  html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}*/
