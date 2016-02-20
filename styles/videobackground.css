@@ -55,13 +55,14 @@ body {
   padding: 2rem;
   width: 50%;
   margin:2rem;
-  float: right;
-  font-size: 1.2rem;
-  font-family: enough for me;
+  /*float: right;*/
+
+  font-size: 1.5rem;
+  font-family: Geneva;
   text-align: center;
 }
-h1 {
-  font-family: Voluptate_demo;
+#titleWord {
+  font-family: Fradley;
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 0;
@@ -69,7 +70,7 @@ h1 {
 }
 #writing button {
   display: block;
-  width: 80%;
+  width: 30%;
   padding: .4rem;
   border: none;
   margin: 1rem auto;
@@ -102,3 +103,36 @@ a:hover{
   html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }*/
+
+
+/*////////// Choice Block //////////*/
+
+.choiceBlocks {
+  display: flex;
+  flex-direction: row;
+  /*border-style: dotted;
+  border-color: red;
+  background-color: yellow;
+  width: 300px;
+  height: 200px;
+  display: none;*/
+}
+
+#rightBlock {
+  border-style: dotted;
+  border-color: red;
+  background-color: yellow;
+  width: 300px;
+  height: 200px;
+
+  /*float: right;*/
+  margin-left: 0;
+}
+#leftBlock {
+  /*border-style: dotted;
+  border-color: red;
+  background-color: yellow;*/
+  width: 300px;
+  height: 200px;
+  margin-right: 0;
+}

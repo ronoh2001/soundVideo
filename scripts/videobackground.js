@@ -61,3 +61,19 @@ function scaleBannerVideoSize(element){
 
     });
 }
+
+///////////////////////////////////////////////////////////////////
+
+
+  $("button").click(function() {
+    $('#titleWord').show().siblings().hide();
+    $("#titleWord").append("<h5>HOW DO YOU FEEL?</h5>");
+    var block = "<div class ='rightBlock'></div><div class ='leftBlock'></div>"
+    $("section").append(block);
+
+  });
+//
+// function blocks(){
+//   var cquestion = ""
+//   $('#rightBlock').
+// }
