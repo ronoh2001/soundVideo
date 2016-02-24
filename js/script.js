@@ -34,12 +34,7 @@ function resetVideoHeight() {
 	$('#ParentControl input').on('change', function() {
 		console.log($('input[name=PC]:checked', '#ParentControl').val());
 	})
-
-
-	//
 	//  var Control = $('input[name="PC"]:checked').val();
-	// })
-
 
 function init() {
 
