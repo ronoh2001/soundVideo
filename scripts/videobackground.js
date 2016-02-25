@@ -68,12 +68,15 @@ function scaleBannerVideoSize(element){
   $("button").click(function() {
     $('#titleWord').show().siblings().hide();
     $("#titleWord").append("<h5>HOW DO YOU FEEL?</h5>");
-    var block = "<div class ='rightBlock'></div><div class ='leftBlock'></div>"
-    $("section").append(block);
-
-  });
-//
-// function blocks(){
-//   var cquestion = ""
-//   $('#rightBlock').
-// }
+    var block = "<div class ='rightBlock'><p>Are you in visual mood?</p><button id='videoMood'>Video Section</button></div><div class ='leftBlock'><p>Are you in auditory mood?</p><button id='musicMood'>Music Section</button></div>"
+    $("#choiceBlocks").show('slow').append(block);
+    $("button").click(function(){
+      console.log(this.id);
+       if(this.id === 'videoMood'){
+         window.location.href = 'video.html';
+       }
+       if(this.id === 'musicMood'){
+         window.location.href = 'music.html';
+       }
+     });
+   });
