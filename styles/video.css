@@ -1,0 +1,31 @@
+body {
+  background-image: url("http://i.kinja-img.com/gawker-media/image/upload/s--AKkNN_C4--/c_scale,fl_progressive,q_80,w_800/kkh9zwl6ilftoae4sfkk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+/*h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+button {
+  display: block;
+  width: 30%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+button:hover {
+   background: rgba(0,0,0,0.5);
+}*/
