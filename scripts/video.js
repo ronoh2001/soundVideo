@@ -1,4 +1,4 @@
-$("button").click(function(e) {
-  $('section','h1').hide();
+$("button").click(function() {
+  $('#cotents','#search','#searchPart').hide();
   $('#search').load('index.html');
 });
