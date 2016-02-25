@@ -3,11 +3,11 @@ function tplawesome(e,t){res=e;for(var n=0;n<t.length;n++){res=res.replace(/\{\{
 $(function () {
   $('form').on('submit', function(e){
     e.preventDefault();
-		console.log(gapi.client.youtube);
+		// console.log(gapi.client.youtube);
     var request= gapi.client.youtube.search.list({
       part: 'snippet',
       type: 'video',
-			safeSearch: 'strict',
+			safeSearch: $('input[name=PC]:checked', '#ParentControl').val(),
       q: encodeURIComponent($('#search').val()).replace(/%20/g, "+"),
       maxResults:3,
       order: 'viewCount',
@@ -30,12 +30,11 @@ $(function () {
 function resetVideoHeight() {
   $('.video').css('height', $('#results').width() * 9/16);
 }
-// document.getElementById('search'),addEventListener('submit', function (event) {
-	$(#ParentControl).on(click, function {
 
-			$.get() var Control = $('input[name="PC"]:checked').val();
+	$('#ParentControl input').on('change', function() {
+		console.log($('input[name=PC]:checked', '#ParentControl').val());
 	})
-
+	//  var Control = $('input[name="PC"]:checked').val();
 
 function init() {
 
