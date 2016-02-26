@@ -1,4 +1,3 @@
-$("button").click(function(e) {
-  $('section','h1').hide();
-  $('#search').load('index.html');
-});
+// $("#video").click(function() {
+//   $('#search').load('index.html').siblings().hide();
+// });
