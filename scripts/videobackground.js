@@ -76,7 +76,7 @@ function scaleBannerVideoSize(element){
          window.location.href = 'video.html';
        }
        if(this.id === 'musicMood'){
-         window.location.href = 'music.html';
+         window.location.href = 'soundcloud.html';
        }
      });
    });
