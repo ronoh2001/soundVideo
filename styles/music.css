@@ -4,3 +4,23 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
+
+img {
+  height: 230px;
+  width: 290px;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  text-align: center;
+}

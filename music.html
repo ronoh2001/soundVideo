@@ -1,30 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Sound Video</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/music.css">
-    <link rel="stylesheet" href="styles/base.css">
-  </head>
-  <body>
-    <h1>Music World</h1>
-  <section>
-    <p><img src="images/musicIcon.jpg" alt=""> Music that will give you energy</p>
-    <div class="energyMusic"></div>
-    <p><img src="images/musicIcon.jpg" alt=""> Music that will make you insane</p>
-    <div class="crazyMusic"></div>
-    <p><img src="images/musicIcon.jpg" alt=""> Music that will make you more sad</p>
-    <div class="sadMusic"></div>
-    <p><img src="images/musicIcon.jpg" alt=""> Music that will make you calm down</p>
-    <div class="calmMusic"></div>
-    <p><img src="images/musicIcon.jpg" alt=""> Music that will make you happy</p>
-    <div class="happyMusic"></div>
-  </section>
-    <p>You have specific Song in your mind? Search it!</p>
-    <button>SEARCH</button>
-    <h3>Enjoy~ :)</h3>
-    <script src="vendor/jquery-2.1.4.js"></script>
-    <script src="scripts/script2.js"></script>
-  </body>
+    <head>
+        <title>The Music</title>
+        <script src="https://connect.soundcloud.com/sdk.js"></script>
+        <script src='js/script2.js'></script>
+        <link rel="stylesheet" href="styles/music.css">
+        <link rel="stylesheet" href="styles/base.css">
+
+    </head>
+    <body>
+      <h1>Music World</h1>
+      <h3>Select by Genre or by Mood</h3>
+      <br>
+      <br>
+      <h2>By Genre (click Image!)
+      <ul id='results'>
+
+      </ul>
+    <div class ="musicSelection">
+      <ul class ="firstline">
+        <li><img src ="images/alternativeRock.png" href= '#' class= 'genre' --data-genre='Alternative Rock'><p>Alternative Rock</p></li>
+        <li><img src ="images/ambient.jpg" href= "#" class= 'genre'--data-genre='Ambient'><p>Ambient</p></li>
+        <li><img src ="images/classicmusic.jpg" href="#" class= "genre"--data-genre= 'Classical'><p>Classical</p></li>
+        <li><img src ="images/countrymusic.jpeg" href="#" class= 'genre'--data-genre= 'Country'><p>Country</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/dance&EDM.jpeg" href="#" class= 'genre' --data-genre='Dance & EDM'><p>Dance & EDM</p></li>
+        <li><img src ="images/dancehall.jpeg" href="#" class= 'genre'--data-genre= 'Dancehall'><p>Dancehall</p></li>
+        <li><img src ="images/deephouse.png" href="#" class= 'genre'--data-genre= 'Deep House'><p>Deep House</p></li>
+        <li><img src ="images/disco.jpeg" href="#" class= 'genre'--data-genre= 'Disco'><p>Disco</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/drum&bass.jpeg" href="#" class= 'genre'--data-genre= 'Drum & Bass'><p>Drum & Bass</p></li>
+        <li><img src ="images/dubstep.jpeg" href="#" class= 'genre'--data-genre= 'Dubstep'><p>Dubstep</p></li>
+        <li><img src ="images/Electronic.jpeg" href="#" class= 'genre'--data-genre= 'Electronic'><p>Electronic</p></li>
+        <li><img src ="images/folkmusic.jpeg" href="#" class= 'genre'--data-genre= 'Folk & Singer-Songwriter'><p>Folk & Singer-Songwriter</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/pop.jpeg" href="#" class= 'genre'--data-genre= 'Pop'><p>Pop</p></li>
+        <li><img src ="images/hiphop.jpeg" href="#" class= 'genre'--data-genre= 'Hip-Hop'><p>Hip-Hop & Rap</p></li>
+        <li><img src ="images/housemusic.jpeg" href="#" class= 'genre'--data-genre= 'House'><p>House</p></li>
+        <li><img src ="images/indiemusic.jpeg" href="#" class= 'genre'--data-genre= 'Indie'><p>Indie</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/jazzblues.jpeg" href="#" class= 'genre'--data-genre= 'Jazz & Blues'><p>Jazz & Blues</p></li>
+        <li><img src ="images/latin.jpeg" href="#" class= 'genre'--data-genre= 'Latin'><p>Latin</p></li>
+        <li><img src ="images/metal.jpeg" href="#" class= 'genre'--data-genre= 'Metal'><p>Metal</p></li>
+        <li><img src ="images/piano.jpeg" href="#" class= 'genre'--data-genre= 'Piano'><p>Piano</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/r&b.jpeg" href="#" class= 'genre'--data-genre= 'R&B & Soul'><p>R&B & Soul</p></li>
+        <li><img src ="images/reggae.jpeg" href="#" class= 'genre'--data-genre= 'Reggae'><p>Reggae</p></li>
+        <li><img src ="images/Reggaeton.jpeg" href="#" class= 'genre'--data-genre= 'Reggaeton'><p>Reggaeton</p></li>
+        <li><img src ="images/rock.jpeg" href="#" class= 'genre'--data-genre= 'Rock'><p>Rock</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/soundtrack.jpeg" href="#" class= 'genre'--data-genre= 'Soundtrack'><p>Soundtrack</p></li>
+        <li><img src ="images/techno.jpeg" href="#" class= 'genre'--data-genre= 'Techno'><p>Techno</p></li>
+        <li><img src ="images/trance.png" href="#" class= 'genre'--data-genre= 'Trance'><p>Trance</p></li>
+        <li><img src ="images/trap.jpg" href="#" class= 'genre'--data-genre= 'Trap'><p>Trap</p></li>
+      </ul>
+      <ul>
+        <li><img src ="images/triphop.jpeg" href="#" class= 'genre'--data-genre= 'Triphop'><p>Triphop</p></li>
+        <li><img src ="images/worldmusic.jpeg" href="#" class= 'genre'--data-genre= 'World'><p>World</p></li>
+      </ul>
+
+    </div>
+        <div id="target"></div>
+        <script src="vendor/jquery-2.1.4.js"></script>
+        <script src="scripts/music.js"></script>
+    </body>
+
+
 </html>
