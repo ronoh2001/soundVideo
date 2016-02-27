@@ -69,7 +69,7 @@ function scaleBannerVideoSize(element){
     $('#titleWord').show().siblings().hide();
     $("#titleWord").append("<h5>HOW DO YOU FEEL?</h5>");
     var block = "<div class ='rightBlock'><p>Are you in visual mood?</p><button id='videoMood'>Video Section</button></div><div class ='leftBlock'><p>Are you in auditory mood?</p><button id='musicMood'>Music Section</button></div>"
-    $("#choiceBlocks").show('slow').append(block);
+    $("#choiceBlocks").show().append(block);
     $("button").click(function(){
       console.log(this.id);
        if(this.id === 'videoMood'){

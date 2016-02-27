@@ -20,23 +20,8 @@ window.onload = function() {
     (function(i) {
       menuLinks[i].onclick = function(e) {
         e.preventDefault();
-        playSound(menuLinks[i].innerHTML);
+        playSound(menuLinks[i].dataset.genre);
       }
     })(i);
   }
 };
-
-$(document).ready(function() {
-  SC.get('/tracks', { genres: 'aoa' }, function(tracks) {
-    $(tracks).each(function(index, track) {
-      $('#results').append($('<li></li>').html(track.title + ' - ' + track.genre));
-    });
-  });
-});
-// $(document).ready(function() {
-//   SC.get('/tracks', { genres: 'aoa' }, function(tracks) {
-//     $(tracks).each(function(index, track) {
-//       $('#results').append($('<li></li>').html(track.title + ' - ' + track.genre));
-//     });
-//   });
-// });
