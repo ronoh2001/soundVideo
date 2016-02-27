@@ -28,7 +28,7 @@
 .video-container .filter {
     z-index: 100;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    /*background: rgba(0, 0, 0, 0.4);*/
     width: 100%;
 }
 .video-container video {
@@ -79,7 +79,7 @@ body {
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
-  transition: .3s background;
+  /*transition: .3s background;*/
 }
 #writing button:hover {
    background: rgba(0,0,0,0.5);

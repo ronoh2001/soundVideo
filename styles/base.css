@@ -26,4 +26,12 @@ button:hover {
 
 ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+iframe {
+  height: 170px;
+  width: 220px;
 }
