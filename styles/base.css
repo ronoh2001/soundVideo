@@ -30,8 +30,3 @@ ul {
   flex-direction: row;
   justify-content: space-around;
 }
-
-iframe {
-  height: 170px;
-  width: 220px;
-}

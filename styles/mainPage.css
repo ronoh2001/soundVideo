@@ -63,7 +63,7 @@ body {
 }
 #titleWord {
   font-family: Fradley;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: .3rem;
@@ -117,8 +117,8 @@ a:hover{
   border: 2px solid #61D2D4;
   background-color: #479696;
   opacity: 0.8;
-  width: 600px;
-  height: 300px;
+  width: 500px;
+  height: 200px;
 
   float: right;
 
@@ -127,7 +127,15 @@ a:hover{
   border: 2px solid #61D2D4;
   background-color: #479696;
   opacity: 0.8;
-  width: 600px;
-  height: 300px;
+  width: 500px;
+  height: 200px;
 
+}
+
+/*h6 {
+  font-family: Chalkduster;
+}*/
+p {
+
+  font-family: Comic Sans MS;
 }

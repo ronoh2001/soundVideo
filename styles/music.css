@@ -16,11 +16,12 @@ h3 {
   text-align: center;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-}
 
 p {
   text-align: center;
+}
+
+iframe {
+  height: 170px;
+  width: 220px;
 }
