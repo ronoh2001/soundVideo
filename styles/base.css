@@ -23,3 +23,10 @@ button {
 button:hover {
    background: rgba(0,0,0,0.5);
 }
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
